@@ -1,0 +1,24 @@
+<div class="container-fluid text-center">    
+  <div class="row content">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Blend Name</th>
+					<th scope="col">Origin</th>
+					<th scope="col">Variety</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let coffee of coffees$ | async">
+					<th scope="row">{{ coffee.id }}</th>
+					<td>
+						{{ coffee.blend_name}}
+					</td>
+					<td>{{ coffee.origin }}</td>
+					<td>{{ coffee.variety }}</td>
+				</tr>
+			</tbody>
+		</table>
+  </div>
+</div>

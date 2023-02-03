@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+$color_1: white;
+$background-color_1: black;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  .row {
+    &.content {
+      height: 450px;
+    }
+  }
+  
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  
+    @media screen and (max-width: 767px) {
+      height: auto;
+      padding: 15px;
+    }
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: $background-color_1;
+    color: $color_1;
+    text-align: center;
+  }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
